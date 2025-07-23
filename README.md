@@ -20,7 +20,7 @@ Welcome to the **CozyScape** — a calming web-based tool that plays ambient bac
 
 1. Download or clone the repository:
    ```bash
-   git clone https://github.com/your-username/cozy-noise-generator.git
+   git clone https://github.com/Ayeshah666/CozyScape.git
 
 2. Open index.html in your browser.
 
