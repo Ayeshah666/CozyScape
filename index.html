@@ -590,8 +590,18 @@
                     this.classList.add('active');
                     
                     // Load and set video
-                    backgroundVideo.src = `videos/${videoFile}`;
-                    videoTitle.textContent = this.textContent.trim();
+                    // Fix the mapping between button text and video filenames
+const videoMap = {
+  "Ocean": "ocean.mp4",
+  "Serene": "serene.mp4",
+  "Rain": "rain.mp4"
+};
+
+// Inside your event listener
+const videoFile = videoMap[this.textContent.trim()];
+backgroundVideo.src = videoFile;
+videoTitle.textContent = this.textContent.trim();
+
                     
                     // Load audio
                     const loaded = await loadAudio(soundName);
