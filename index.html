@@ -589,18 +589,11 @@
                     soundOptions.forEach(opt => opt.classList.remove('active'));
                     this.classList.add('active');
                     
+ 
                     // Load and set video
-                    // Fix the mapping between button text and video filenames
-const videoMap = {
-  "Ocean": "ocean.mp4",
-  "Serene": "serene.mp4",
-  "Rain": "rain.mp4"
-};
-
-// Inside your event listener
-const videoFile = videoMap[this.textContent.trim()];
-backgroundVideo.src = videoFile;
-videoTitle.textContent = this.textContent.trim();
+                    backgroundVideo.src = `videos/${videoFile}`;
+                    videoTitle.textContent = this.textContent.trim();
+                     i dont have videos folder and my files are oceanmp4, serenemp4, rainmp4, rainmp4, so how do i edit this code?
 
                     
                     // Load audio
